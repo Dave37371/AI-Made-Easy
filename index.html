@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6aa1dc7d8d82674005011470.png">
+<title>AI Made Easy Summit — Voice to Influence™ × Syllaby</title>
+<meta name="description" content="Practical AI. Better Marketing. Smarter Business. Gold Coast, June 2027. Presented by Voice to Influence™ and Syllaby.">
+<meta property="og:title" content="AI Made Easy Summit">
+<meta property="og:description" content="Practical AI. Better Marketing. Smarter Business. Gold Coast, June 2027.">
+<meta property="og:image" content="https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6aa1dbb581f0105816d33cb6.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A0C0F;--ink-mid:#141720;--gold:#C9A84C;--gold-lite:#E8C96A;
+    --cream:#F4EFE6;--mist:#C2BAA8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--ink);color:var(--cream);font-family:'DM Sans',Arial,sans-serif;font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.08;letter-spacing:-.015em;color:var(--cream);}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px;}
+
+  /* Header */
+  .site-header{padding:28px 0;text-align:center;border-bottom:1px solid rgba(201,168,76,.2);}
+  .partner-lockup{display:inline-flex;align-items:center;gap:20px;}
+  .partner-lockup img{height:52px;width:auto;display:inline-block;}
+  .partner-lockup .syllaby-logo{height:52px;width:52px;border-radius:2px;}
+  .partner-lockup .x{font-family:'Playfair Display',Georgia,serif;font-size:20px;color:var(--mist);opacity:.55;}
+  @media(max-width:640px){.partner-lockup{gap:14px;}.partner-lockup img,.partner-lockup .syllaby-logo{height:38px;width:38px;}.partner-lockup img:not(.syllaby-logo){width:auto;}}
+
+  /* Hero */
+  .hero{padding:clamp(72px,10vh,120px) 0 clamp(56px,7vh,88px);text-align:center;position:relative;overflow:hidden;}
+  .hero::before{content:'';position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:min(1100px,140vw);height:740px;pointer-events:none;background:radial-gradient(ellipse at center,rgba(201,168,76,.16) 0%,rgba(201,168,76,.05) 38%,transparent 68%);}
+  .hero .inner{position:relative;z-index:2;}
+  .eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:30px;}
+  .eyebrow::before,.eyebrow::after{content:'';width:30px;height:1px;background:var(--gold);opacity:.55;}
+  .hero h1{font-size:clamp(48px,9vw,108px);margin-bottom:18px;}
+  .hero .category{font-size:clamp(15px,1.8vw,19px);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--cream);margin-bottom:22px;}
+  .hero .promise{font-size:clamp(18px,2vw,23px);color:var(--mist);max-width:640px;margin:0 auto 36px;}
+  .datebar{display:inline-flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;border:1px solid rgba(201,168,76,.32);border-radius:2px;padding:15px 30px;font-size:15px;letter-spacing:.04em;color:var(--cream);background:rgba(201,168,76,.05);margin-bottom:36px;}
+  .datebar b{font-weight:600;color:var(--gold);}
+  .btn{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:19px 44px;border-radius:2px;border:1.5px solid transparent;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background .3s,transform .3s;}
+  .btn-solid{background:var(--gold);color:var(--ink);}
+  .btn-solid:hover{background:var(--gold-lite);transform:translateY(-2px);}
+  .hero .trust{margin-top:20px;font-size:12.5px;letter-spacing:.06em;color:rgba(194,186,168,.55);}
+
+  /* Featuring */
+  .featuring{padding:64px 0;background:var(--ink-mid);border-top:1px solid rgba(201,168,76,.2);border-bottom:1px solid rgba(201,168,76,.2);}
+  .featuring .kicker{font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:36px;}
+  .speaker{display:flex;align-items:center;gap:40px;max-width:680px;margin:0 auto;}
+  .speaker img{width:180px;height:180px;object-fit:cover;border-radius:2px;border:1px solid rgba(201,168,76,.4);flex-shrink:0;}
+  .speaker .name{font-size:26px;}
+  .speaker .role{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin:8px 0 14px;}
+  .speaker .bio{font-size:15.5px;color:var(--mist);}
+  @media(max-width:640px){.speaker{flex-direction:column;text-align:center;gap:22px;}}
+
+  /* CTA band */
+  .cta-band{padding:72px 0;text-align:center;}
+  .cta-band h2{font-size:clamp(28px,4vw,38px);margin-bottom:16px;}
+  .cta-band p{font-size:17px;color:var(--mist);max-width:520px;margin:0 auto 30px;}
+
+  footer{border-top:1px solid rgba(201,168,76,.2);padding:40px 0;text-align:center;font-size:13px;color:var(--mist);}
+  footer .tag{margin-top:8px;opacity:.75;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="partner-lockup">
+    <a href="https://voicetoinfluence.com/home" aria-label="Voice to Influence home">
+      <img src="assets/vti-logo-header.png" alt="Voice to Influence">
+    </a>
+    <span class="x">&times;</span>
+    <img class="syllaby-logo" src="assets/syllaby-logo.png" alt="Syllaby">
+  </div>
+</header>
+
+<header class="hero">
+  <div class="wrap inner">
+    <span class="eyebrow">Voice to Influence&trade; &times; Syllaby present</span>
+    <h1>AI Made Easy<br>Summit</h1>
+    <p class="category">For Marketing &amp; Business</p>
+    <p class="promise">Practical AI. Better Marketing. Smarter Business.</p>
+    <div class="datebar"><b>Gold Coast &middot; June 2027</b></div>
+    <div>
+      <!-- CTA target TBD — registration funnel not yet built. Update href once CF2/GHL funnel is live. -->
+      <a class="btn btn-solid" href="#register">Save My Seat</a>
+    </div>
+    <p class="trust">Presented by Voice to Influence&trade; in partnership with Syllaby</p>
+  </div>
+</header>
+
+<section class="featuring wrap">
+  <p class="kicker">Featuring</p>
+  <div class="speaker">
+    <img src="https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6a87f3dde6501a9518307d6d.png" alt="Austin Armstrong">
+    <div>
+      <div class="name">Austin Armstrong</div>
+      <div class="role">Founder &amp; CEO, Syllaby</div>
+      <p class="bio">Author of VIRALITY!, 2x seven-figure entrepreneur, and Managing Partner at Bullhouse Ventures. Austin has built content systems generating billions of views — now bringing that playbook to marketers and business owners ready to put AI to work.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band wrap" id="register">
+  <h2>Reserve your seat at the Gold Coast.</h2>
+  <p>One day. Practical AI systems for marketing and business, built by people who use them every day.</p>
+  <!-- CTA target TBD — registration funnel not yet built. Update href once CF2/GHL funnel is live. -->
+  <a class="btn btn-solid" href="#register">Save My Seat</a>
+</section>
+
+<footer>
+  Voice to Influence&trade; &times; Syllaby
+  <div class="tag">AI Made Easy Summit &middot; Gold Coast &middot; June 2027</div>
+</footer>
+
+</body>
+</html>
