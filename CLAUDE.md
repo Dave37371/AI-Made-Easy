@@ -34,6 +34,54 @@ section below): registration/pricing tiers, coupon-code mechanic, Sat/Sun schedu
 speaker grid beyond Austin, native GHL form embed. This pass only covers the stack migration
 and the existing hero content — content/funnel work is a separate follow-up.
 
+## UPDATE (11 Sep 2026, session 4): Landing page + thank-you page + speaker pages built
+
+Full registration landing page (`app/page.tsx`) and thank-you page (`app/thank-you/page.tsx`)
+built on `nextjs-rebuild`, plus individual speaker pages at `/speakers/[slug]` (dynamic route,
+data in `lib/speakers.ts`, statically generated — 7 pages). Pushed to origin.
+
+**Date handling — per Dave's instruction, start date only for now:** every page says
+"Gold Coast · June 2027" with no specific day, and both the schedule section and thank-you
+page explicitly say exact dates are still being finalised. No calendar-add links (Google/
+Outlook/ICS) — can't build those without a real date/time.
+
+**Speaker content sourced this session:**
+- **Austin Armstrong** — bio/facts/photo from `voicetoinfluence.com/faculty/austin-armstrong`
+  and `/mentors`. Confirmed, photo included.
+- **Jeff Ross** — bio/facts/photo ported verbatim from `vti-site/faculty/jeff-ross.html`
+  (the "reference file" Dave pointed to). Confirmed, photo included.
+- **Kanji Low** — bio/facts from `kanjilow.com/#about`. NOTE: site spells it "Kanji Low" (no
+  "e") — CLAUDE.md/MEMORY.md speaker list elsewhere says "Kanji Lowe." Used "Low" (primary
+  source), flagging the discrepancy for Dave to confirm. No usable photo URL came back from
+  the fetch (page only exposed base64 image data, not a stable URL) — placeholder initials
+  used instead; needs a proper headshot added later.
+- **Bruno & Stacie Marcinkowski** — bio/facts/photos ported from the Real Estate Summit
+  speaker pages (`heromakers-portal/speakers/bruno-marcinkowski.html` and
+  `stacie-marcinkowski.html` — the "reference file" Dave pointed to). Photos reused from their
+  existing `statics.myclickfunnels.com` URLs (already-hosted assets, not re-uploaded).
+- **Melissa Mitchell** — placeholder only, per Dave's instruction (no info supplied). Card
+  shows "To be confirmed," profile page says bio is pending.
+- **Louise Dutka** — placeholder only. NOTE: this name wasn't in the confirmed speaker list
+  anywhere else in this repo's CLAUDE.md/MEMORY.md before this session — added here as a new
+  name Dave gave directly. Flagging as new/unconfirmed rather than assuming it was always
+  part of the lineup.
+
+**Layout convention followed:** VIP tier (Austin, Jeff — 2-up, large cards) / Speaker tier
+(Kanji, Melissa, Bruno, Stacie, Louise — 4-up compact cards), matching the existing VTI summit
+build pattern in `VTI-Summit-Builds-v3/peak-vitality-summit-ii/04-vip-speakers.html`. Individual
+speaker profile pages follow the `vti-site/faculty/jeff-ross.html` structure (hero grid, about
++ facts sidebar, topics, closing CTA).
+
+**Registration mechanic — honestly incomplete, not faked:** the register panel shows real
+pricing framing (~$497 general, early-bird, first-100-free coupon mechanic as copy) but the
+actual GHL form isn't embedded — Dave hasn't supplied the form ID/embed code yet (see STILL
+OPEN section). The "Save My Seat" button in that panel is visibly disabled with "Coming Soon"
+rather than linking anywhere fake. Marked clearly in the source for whoever swaps it in.
+
+**Watch page:** not built. Speaker pages currently note "the watch page will be linked here
+once the event goes live" rather than linking to a page that doesn't exist. Building the
+actual watch page is future work once live/virtual streaming details are settled.
+
 ---
 
 ## WHAT THIS IS
