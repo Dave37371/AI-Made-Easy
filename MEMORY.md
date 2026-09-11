@@ -42,6 +42,11 @@
       not a fake/dead link. Needs the form ID/embed code + coupon mechanism from Dave.
 - [ ] Speaker photos still needed: Kanji Low (fetch returned no stable image URL), Melissa
       Mitchell, Louise Dutka (both placeholder per Dave's explicit instruction)
+- [ ] Speaker photo crop — Dave flagged (12 Sep 2026) that Austin Armstrong's and Jeff Ross's
+      photos show heads cut off at the top in the VIP card (`components/SpeakerCard.tsx` /
+      `SpeakerProfile.tsx`, `object-cover object-top`). Explicitly deprioritised for now
+      ("we don't need to do it now") — fix later by adjusting object-position or cropping the
+      source images before reuse. Likely same issue will show on Bruno/Stacie's photos too.
 - [ ] Watch page — not built yet, speaker pages just note it'll be linked once live
 - [ ] Custom domain connected (Dave, via Netlify)
 - [x] `nextjs-rebuild` branch pushed to origin (11 Sep 2026)
