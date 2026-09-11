@@ -3,6 +3,39 @@
 
 ---
 
+## STATUS (11 Sep 2026): Next.js rebuild in progress on branch `nextjs-rebuild`
+
+Same stack move as `LSD Marketing/Main-Site`: off plain static HTML onto Next.js + Tailwind +
+shadcn/ui, so future premium components (shadcn, Vengeance UI, or any other registry) drop in
+natively via their own CLI instead of being hand-copied. `main` still holds the original
+single-file `index.html` (hero page, committed/pushed) and is what Netlify would deploy from
+until this branch is reviewed and merged — untouched by this rebuild.
+
+**Stack (`nextjs-rebuild` branch):**
+- Next.js 16 (App Router) + Tailwind v4, static export (`output: "export"` in `next.config.ts`).
+- Framer Motion for the hero reveal.
+- shadcn/ui structure (`components.json`, `lib/utils.ts`, `components/ui/`) wired up. The CLI
+  works natively here — `npx shadcn@latest add [component]` verified live (11 Sep 2026, same
+  device). No network block. Use the CLI directly for shadcn or any other component registry
+  (Vengeance UI included) going forward.
+- Brand tokens in `app/globals.css` pulled from the VTI design system documented in
+  `VoiceToInfluence/CLAUDE.md` (SITE BUILD RULES): ink/gold/cream/mist palette, Playfair
+  Display (headings) + DM Sans (body), 2px radius everywhere, no pills/rounded cards.
+- Hero content ported 1:1 from the existing `main`-branch `index.html` (partner lockup, hero,
+  featuring/Austin Armstrong, CTA band, footer) into components — `Header`, `Hero`, `Featuring`,
+  `CtaBand`, `Footer` — no copy changes, just a technical port to the new stack.
+- `assets/*.png` moved to `public/assets/` (Next.js convention for static files).
+- `netlify.toml` on this branch only: build command `npm run build`, publish `out`. Doesn't
+  affect `main`/production until merged.
+- Build verified clean (`npm run build`) before this note was written.
+
+**Not yet done on this branch** — still needs the full build brief applied (see BUILD BRIEF
+section below): registration/pricing tiers, coupon-code mechanic, Sat/Sun schedule detail,
+speaker grid beyond Austin, native GHL form embed. This pass only covers the stack migration
+and the existing hero content — content/funnel work is a separate follow-up.
+
+---
+
 ## WHAT THIS IS
 
 A new VTI-family summit — **AI Made Easy Summit** — run in partnership with **Syllaby** (Austin Armstrong, CEO Syllaby, existing VTI Guest Faculty — see `VoiceToInfluence/MEMORY.md`, added 2026-08-21).

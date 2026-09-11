@@ -1,0 +1,133 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* ---- VTI brand tokens (source: VoiceToInfluence/CLAUDE.md — SITE BUILD RULES) ---- */
+
+  --ink: #0A0C0F;       /* page background */
+  --ink-mid: #141720;   /* alternate section background */
+  --ink-lite: #1E2330;  /* portrait placeholder */
+  --gold: #C9A84C;      /* accent: eyebrows, buttons, rules, hairlines */
+  --gold-lite: #E8C96A; /* button hover */
+  --cream: #F4EFE6;     /* body text */
+  --mist: #C2BAA8;      /* muted copy */
+
+  /* Type */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+
+  /* Radius — sharp everywhere, no pills, no rounded cards */
+  --radius: 2px;
+
+  /* Spacing scale */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px;
+
+  /* ---- shadcn/ui semantic mapping (light — this site is dark-first, see .dark below) ---- */
+  --background: var(--cream);
+  --foreground: var(--ink);
+  --card: var(--cream);
+  --card-foreground: var(--ink);
+  --popover: var(--cream);
+  --popover-foreground: var(--ink);
+  --primary: var(--gold);
+  --primary-foreground: var(--ink);
+  --secondary: var(--ink-lite);
+  --secondary-foreground: var(--cream);
+  --muted: var(--mist);
+  --muted-foreground: var(--ink-mid);
+  --accent: var(--gold);
+  --accent-foreground: var(--ink);
+  --destructive: #B3402A;
+  --border: rgba(201, 168, 76, 0.2);
+  --input: rgba(201, 168, 76, 0.2);
+  --ring: var(--gold);
+}
+
+.dark {
+  --background: var(--ink);
+  --foreground: var(--cream);
+  --card: var(--ink-mid);
+  --card-foreground: var(--cream);
+  --popover: var(--ink-mid);
+  --popover-foreground: var(--cream);
+  --primary: var(--gold);
+  --primary-foreground: var(--ink);
+  --secondary: var(--ink-lite);
+  --secondary-foreground: var(--cream);
+  --muted: var(--ink-mid);
+  --muted-foreground: var(--mist);
+  --accent: var(--ink-lite);
+  --accent-foreground: var(--gold);
+  --destructive: #D9573D;
+  --border: rgba(201, 168, 76, 0.2);
+  --input: rgba(201, 168, 76, 0.2);
+  --ring: var(--gold);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* brand colors exposed directly as utilities: bg-brand-gold, text-brand-cream, etc. */
+  --color-brand-ink: var(--ink);
+  --color-brand-ink-mid: var(--ink-mid);
+  --color-brand-ink-lite: var(--ink-lite);
+  --color-brand-gold: var(--gold);
+  --color-brand-gold-lite: var(--gold-lite);
+  --color-brand-cream: var(--cream);
+  --color-brand-mist: var(--mist);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+
+  --radius-sm: calc(var(--radius) - 0px);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius);
+  --radius-xl: var(--radius);
+
+  --spacing-1: var(--s-1);
+  --spacing-2: var(--s-2);
+  --spacing-3: var(--s-3);
+  --spacing-4: var(--s-4);
+  --spacing-5: var(--s-5);
+  --spacing-6: var(--s-6);
+  --spacing-7: var(--s-7);
+  --spacing-8: var(--s-8);
+  --spacing-9: var(--s-9);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    font-weight: 300;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+  }
+}

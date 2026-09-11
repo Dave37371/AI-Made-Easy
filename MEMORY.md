@@ -25,9 +25,14 @@
 
 - [x] Repo cloned, CLAUDE.md + MEMORY.md created
 - [x] Deployment target confirmed (Netlify)
-- [x] Hero page (index.html) built, branding-corrected — pending commit/push
+- [x] Hero page (index.html) built, branding-corrected — committed/pushed to `main`
+- [x] Next.js 16 + Tailwind v4 + shadcn/ui scaffold built on branch `nextjs-rebuild`
+      (11 Sep 2026), mirroring `LSD Marketing/Main-Site`. Hero content ported 1:1 from
+      `main`'s index.html into components. Build verified clean. `main` untouched. Full
+      detail in CLAUDE.md STATUS section.
 - [ ] Full registration landing page (pricing tiers, coupon logic, speaker grid, Sat/Sun schedule)
 - [ ] Thank-you page
 - [ ] Native GHL registration form embedded
 - [ ] Speaker/faculty pack
 - [ ] Custom domain connected (Dave, via Netlify)
+- [ ] `nextjs-rebuild` branch reviewed/approved and pushed to origin — local only so far
