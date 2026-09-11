@@ -1,5 +1,5 @@
 # AI MADE EASY SUMMIT — COWORK OS BRAIN
-## Brand: Voice to Influence™ × Syllaby | Folder: /VoiceToInfluence/AI-Made-Easy/
+## Brand: Voice to Influence™ presents, founding partner Syllaby | Folder: /VoiceToInfluence/AI-Made-Easy/
 
 ---
 
@@ -16,9 +16,8 @@ Full VTI brand truth (offer stack, ecosystem, voice, team, routing rules) lives 
 ## CONFIRMED (2026-09-11)
 
 - **Deployment target:** Netlify standalone site, same pattern as `vti-site` — plain HTML/CSS/JS at repo root, `netlify.toml` with `publish = "."`, own `.git`.
-- **Partnership:** Voice to Influence™ × Syllaby. Presented-by framing, not a co-host/sponsor-only relationship.
+- **Partnership (superseded — see session 3 below):** was framed as "Voice to Influence™ × Syllaby," co-equal. Corrected 2026-09-11 session 3 to "presented by VTI, Syllaby as founding partner" — do not use the "×" framing.
 - **Event branding (Dave's exact direction, use as-is):**
-  - Eyebrow/kicker: `VOICE TO INFLUENCE™ × SYLLABY PRESENT`
   - Event name (largest, most visible element): `AI MADE EASY SUMMIT`
   - Subhead/category line: `FOR MARKETING & BUSINESS`
   - Promise line: `Practical AI. Better Marketing. Smarter Business.`
@@ -32,12 +31,49 @@ Full VTI brand truth (offer stack, ecosystem, voice, team, routing rules) lives 
 - **Syllaby logo:** `assets/syllaby-logo.png`, sourced from Dave, 2000×2000, solid background (no transparency — colorType RGB, not RGBA). Used in the header partner lockup at 52px (2px radius square) next to the VTI horizontal mark, separated by a "×". Not wrapped in a link — Syllaby's own site URL hasn't been confirmed, don't guess it.
 - **Sequence:** current build (hero/index.html) gets finalised and pushed now. Dave connects Netlify + a custom domain himself. Landing page (registration) and thank-you page get built in a later session once the domain is live.
 
+## BUILD BRIEF — CONFIRMED 2026-09-11, session 3 (source of truth, supersedes earlier partial detail)
+
+**Positioning:** AI Made Easy is intended as Dave/VTI's **signature annual event** — repeats yearly. This year: presented by Voice to Influence™, **Syllaby as founding partner**. The founding-partner slot is not permanently Syllaby — next year's edition may swap in a different (bigger) co-presenter (GoHighLevel floated as a hypothetical example only, not confirmed). Do not bake "× Syllaby" or any permanent co-branding into reusable page/section names — keep the founding-partner treatment swappable.
+
+**Format:**
+- Saturday = main event. Workshop-style, intimate, explicitly **not** keynote-heavy.
+- Sunday = VIP mastermind. Capped at **~50 people**, higher ticket price, with Austin Armstrong.
+- Total cap: **~300 people**.
+- Virtual attendance option exists but is **paid, and not advertised upfront** — don't surface it in primary hero/CTA copy; it's a secondary/backend offer.
+
+**Pricing:**
+- General admission: **~$497/ticket minimum**.
+- Early-bird tiers, price rises as the event nears.
+- Needs a **coupon code system** (ties into the launch mechanic below).
+
+**Launch mechanic:**
+- First **100 tickets free** via coupon code, distributed at **Austin's AI Marketing World event** (recipients still cover their own travel/event costs — the ticket itself is free, nothing else is comped).
+- This is used as **social proof** ("100 people already committed") to then sell the remaining tickets at ~$500 each. Sequencing matters: the free-100 push comes first, general sale copy should be able to lean on "already X people confirmed" once that phase completes.
+
+**Budget:**
+- Production cost: **~$100,000**.
+- Break-even: **≈200 attendees**.
+- Sponsorship target: **$20K–$50K**.
+
+**Speakers confirmed so far:**
+- Austin Armstrong (Syllaby, VIP mastermind host)
+- Kanji Lowe
+- Melissa Mitchell
+- Bruno & Stacie — flying in if possible, virtual fallback if not (not yet settled)
+- Jeff Ross — main speaker
+
+No bios/roles beyond names confirmed yet for Kanji Lowe, Melissa Mitchell, or Bruno & Stacie — don't invent them.
+
+---
+
 ## STILL OPEN — ASK DAVE BEFORE FINALISING
 
-- Exact summit day(s)/dates within June 2027, and venue within Gold Coast (in-person? hybrid?)
-- Full speaker list beyond Austin Armstrong
-- The actual GHL form (embed code / form ID) for registration — not yet supplied, needed before the landing page can go live
-- Whether other VTI faculty appear on this summit or it's a standalone Syllaby-fronted event
+- Exact summit day(s)/dates within June 2027 (which Saturday/Sunday), and venue within Gold Coast
+- Bruno & Stacie: flying in or virtual — not yet settled
+- Speaker bios/roles for Kanji Lowe, Melissa Mitchell, Bruno & Stacie
+- The actual GHL form (embed code / form ID) for registration, including the coupon-code mechanism for the free-100 launch phase — not yet supplied, needed before the landing page can go live
+- Exact early-bird pricing tiers and price-rise schedule
+- Sponsor prospects/deals against the $20K–$50K target
 - Custom domain (Dave connecting via Netlify — get the final domain once live)
 
 ---
