@@ -6,28 +6,16 @@ export type Speaker = {
   tier: "vip" | "speaker";
   confirmed: boolean;
   photo: string | null;
-  /** CSS object-position for the headshot crop. Defaults to DEFAULT_PHOTO_POSITION
-   *  (keeps the head in frame for a typical headshot) — only set this per speaker
-   *  if a specific photo needs a different crop (e.g. face isn't centred). */
+  /** Manual object-position override — only set this if a specific photo still
+   *  looks wrong under the standard aspect-[4/5] + object-cover + object-top
+   *  treatment (see STANDING CONVENTION note in this repo's CLAUDE.md). Leave
+   *  unset for every normal headshot. */
   photoPosition?: string;
   cardBio: string;
   bio: string[];
   facts: { label: string; detail: string }[];
   topics: string[];
 };
-
-/**
- * Standing default headshot crop for every speaker/mentor photo on this site.
- *
- * DO NOT use the Tailwind `object-top` utility for headshots — it crops from
- * the very top pixel of the source image, which cuts heads off on typical
- * portrait photos (most have little to no headroom above the hair). Apply
- * this as an inline `style={{ objectPosition: speaker.photoPosition ?? DEFAULT_PHOTO_POSITION }}`
- * alongside `object-cover` instead. This is the reusable fix — carry it into
- * every future VTI/HeroMakers event site built from this template, not just
- * this one.
- */
-export const DEFAULT_PHOTO_POSITION = "50% 20%";
 
 export const speakers: Speaker[] = [
   {

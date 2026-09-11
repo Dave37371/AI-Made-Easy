@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DEFAULT_PHOTO_POSITION, type Speaker } from "@/lib/speakers";
+import type { Speaker } from "@/lib/speakers";
 
 export default function SpeakerCard({ speaker }: { speaker: Speaker }) {
   const isVip = speaker.tier === "vip";
@@ -12,8 +12,8 @@ export default function SpeakerCard({ speaker }: { speaker: Speaker }) {
       }`}
     >
       <div
-        className={`w-full bg-brand-ink-lite border-b flex items-center justify-center overflow-hidden ${
-          isVip ? "h-[220px] sm:h-[300px] border-brand-gold/25" : "h-[150px] sm:h-[190px] border-brand-gold/10"
+        className={`w-full aspect-[4/5] bg-brand-ink-lite border-b flex items-center justify-center overflow-hidden ${
+          isVip ? "border-brand-gold/25" : "border-brand-gold/10"
         }`}
       >
         {speaker.photo ? (
@@ -21,8 +21,8 @@ export default function SpeakerCard({ speaker }: { speaker: Speaker }) {
           <img
             src={speaker.photo}
             alt={speaker.name}
-            className="w-full h-full object-cover"
-            style={{ objectPosition: speaker.photoPosition ?? DEFAULT_PHOTO_POSITION }}
+            className="w-full h-full object-cover object-top"
+            style={speaker.photoPosition ? { objectPosition: speaker.photoPosition } : undefined}
           />
         ) : (
           <span

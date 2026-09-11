@@ -43,11 +43,13 @@
 - [ ] Speaker photos still needed: Kanji Low (fetch returned no stable image URL), Melissa
       Mitchell, Louise Dutka (both placeholder per Dave's explicit instruction)
 - [x] Speaker photo crop — Dave flagged (12 Sep 2026) heads cut off at the top on ALL headshots,
-      not just VIP, and asked for a fix that carries forward to future events rather than
-      needing to be redone each time. Fixed same session: replaced Tailwind `object-top` with
-      an inline `objectPosition` style + `DEFAULT_PHOTO_POSITION` constant in `lib/speakers.ts`
-      (per-speaker `photoPosition` override available). Documented as a standing convention in
-      this file's CLAUDE.md for reuse on every future VTI/HeroMakers event build.
+      not just VIP, and asked for a fix that carries forward to future events. First attempt
+      (inline objectPosition tuning) was still symptom-level fix — Dave called it out. Real fix:
+      root cause was fixed-pixel-height containers forcing bad crops; switched containers to
+      `aspect-[4/5]` (matches headshot proportions) + `object-cover object-top`, no per-photo
+      tuning needed. `photoPosition` override kept as an exception-only escape hatch. Documented
+      as a standing convention in CLAUDE.md — never give a headshot container a fixed height,
+      on this site or any future VTI/HeroMakers event build.
 - [ ] Watch page — not built yet, speaker pages just note it'll be linked once live
 - [ ] Custom domain connected (Dave, via Netlify)
 - [x] `nextjs-rebuild` branch pushed to origin (11 Sep 2026)

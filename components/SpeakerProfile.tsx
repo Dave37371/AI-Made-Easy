@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DEFAULT_PHOTO_POSITION, type Speaker } from "@/lib/speakers";
+import type { Speaker } from "@/lib/speakers";
 
 export default function SpeakerProfile({ speaker }: { speaker: Speaker }) {
   return (
@@ -35,14 +35,14 @@ export default function SpeakerProfile({ speaker }: { speaker: Speaker }) {
               </p>
             )}
           </div>
-          <div className="aspect-square border border-brand-gold/30 rounded-[2px] overflow-hidden bg-brand-ink-lite flex items-center justify-center order-first md:order-last max-w-[280px] mx-auto md:max-w-none">
+          <div className="aspect-[4/5] border border-brand-gold/30 rounded-[2px] overflow-hidden bg-brand-ink-lite flex items-center justify-center order-first md:order-last max-w-[280px] mx-auto md:max-w-none">
             {speaker.photo ? (
               // eslint-disable-next-line @next/next/no-img-element
               <img
                 src={speaker.photo}
                 alt={speaker.name}
-                className="w-full h-full object-cover"
-                style={{ objectPosition: speaker.photoPosition ?? DEFAULT_PHOTO_POSITION }}
+                className="w-full h-full object-cover object-top"
+                style={speaker.photoPosition ? { objectPosition: speaker.photoPosition } : undefined}
               />
             ) : (
               <span className="font-display font-bold text-6xl text-brand-gold/40">

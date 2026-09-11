@@ -6,17 +6,27 @@
 ## STANDING CONVENTION — headshot/photo cropping (fixed 12 Sep 2026, keep for every future event)
 
 Every headshot on this site (mentor/speaker cards, profile portraits — every tier, not just
-VIP) was showing heads cut off at the top. Cause: the Tailwind `object-top` utility crops from
-the literal top pixel of the source image, which cuts into hair/forehead on ordinary headshots
-that don't have much headroom above the head. Fixed by replacing `object-top` with an inline
-`style={{ objectPosition: speaker.photoPosition ?? DEFAULT_PHOTO_POSITION }}` (see
-`lib/speakers.ts`, `DEFAULT_PHOTO_POSITION = "50% 20%"`), with a per-speaker `photoPosition`
-override available for any photo that still needs different framing.
+VIP) was showing heads cut off at the top. First fix attempt (inline `objectPosition` magic
+number) treated the symptom, not the cause, and Dave correctly called it out as fragile —
+would've needed re-tuning per photo, per event, forever.
 
-**This is a reusable fix, not a one-off** — Dave doesn't want to re-fix this on every new event
-site. Carry the same pattern (constant + inline `objectPosition`, never a bare `object-top`
-class on a headshot) into every future VTI/HeroMakers event build, whether copied from this
-repo or built fresh.
+**Real root cause:** the image containers used fixed pixel heights (e.g. `h-[300px]` on a
+wide card) that don't match a headshot's natural portrait aspect ratio. `object-fit: cover`
+then has to crop hard to fill that mismatched box, and where it crops depends on the source
+photo's own proportions — unpredictable, and no single `object-position` value fixes it for
+every photo.
+
+**Actual fix:** make the container's aspect ratio match a standard headshot ratio instead of
+a fixed pixel height — `aspect-[4/5]` on the image wrapper, `object-cover object-top` on the
+`<img>` (see `components/SpeakerCard.tsx`, `components/SpeakerProfile.tsx`). With the box
+already shaped like the photo, `object-top` crops little to nothing, so no per-photo tuning is
+needed. `Speaker.photoPosition` (`lib/speakers.ts`) still exists as a manual escape hatch for
+the rare photo that's still framed oddly, but it's the exception, not the standard path.
+
+**This is the reusable pattern** — Dave doesn't want to re-fix this on every new event site.
+Carry `aspect-[4/5]` (or whatever ratio matches the actual photos being used) + `object-cover
+object-top` into every future VTI/HeroMakers event build, whether copied from this repo or
+built fresh. Never give a headshot container a fixed pixel height.
 
 ---
 
