@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Speaker } from "@/lib/speakers";
+import { DEFAULT_PHOTO_POSITION, type Speaker } from "@/lib/speakers";
 
 export default function SpeakerCard({ speaker }: { speaker: Speaker }) {
   const isVip = speaker.tier === "vip";
@@ -21,7 +21,8 @@ export default function SpeakerCard({ speaker }: { speaker: Speaker }) {
           <img
             src={speaker.photo}
             alt={speaker.name}
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: speaker.photoPosition ?? DEFAULT_PHOTO_POSITION }}
           />
         ) : (
           <span

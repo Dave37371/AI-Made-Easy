@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Speaker } from "@/lib/speakers";
+import { DEFAULT_PHOTO_POSITION, type Speaker } from "@/lib/speakers";
 
 export default function SpeakerProfile({ speaker }: { speaker: Speaker }) {
   return (
@@ -41,7 +41,8 @@ export default function SpeakerProfile({ speaker }: { speaker: Speaker }) {
               <img
                 src={speaker.photo}
                 alt={speaker.name}
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: speaker.photoPosition ?? DEFAULT_PHOTO_POSITION }}
               />
             ) : (
               <span className="font-display font-bold text-6xl text-brand-gold/40">

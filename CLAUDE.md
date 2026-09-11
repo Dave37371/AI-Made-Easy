@@ -3,6 +3,23 @@
 
 ---
 
+## STANDING CONVENTION — headshot/photo cropping (fixed 12 Sep 2026, keep for every future event)
+
+Every headshot on this site (mentor/speaker cards, profile portraits — every tier, not just
+VIP) was showing heads cut off at the top. Cause: the Tailwind `object-top` utility crops from
+the literal top pixel of the source image, which cuts into hair/forehead on ordinary headshots
+that don't have much headroom above the head. Fixed by replacing `object-top` with an inline
+`style={{ objectPosition: speaker.photoPosition ?? DEFAULT_PHOTO_POSITION }}` (see
+`lib/speakers.ts`, `DEFAULT_PHOTO_POSITION = "50% 20%"`), with a per-speaker `photoPosition`
+override available for any photo that still needs different framing.
+
+**This is a reusable fix, not a one-off** — Dave doesn't want to re-fix this on every new event
+site. Carry the same pattern (constant + inline `objectPosition`, never a bare `object-top`
+class on a headshot) into every future VTI/HeroMakers event build, whether copied from this
+repo or built fresh.
+
+---
+
 ## STATUS (11 Sep 2026): Next.js rebuild in progress on branch `nextjs-rebuild`
 
 Same stack move as `LSD Marketing/Main-Site`: off plain static HTML onto Next.js + Tailwind +
