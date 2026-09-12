@@ -18,6 +18,10 @@
 - 2026-09-11 (session 3): Dave supplied full build brief from a call — format (Sat main event/Sun VIP mastermind, 300 cap), pricing (~$497 general, early-bird tiers, coupon system), launch mechanic (first 100 free via coupon at Austin's AI Marketing World event, used as social proof), budget (~$100K production, break-even ~200 attendees, $20K-$50K sponsorship target), speakers (Austin Armstrong, Kanji Lowe, Melissa Mitchell, Bruno & Stacie, Jeff Ross), and positioning (signature annual event, Syllaby is THIS year's founding partner, not a permanent co-brand — the slot may rotate to a different partner next year). Full detail in CLAUDE.md BUILD BRIEF section — treat as source of truth over anything in session 1.
 - 2026-09-11 (session 3): **Branding correction** — header/hero copy changed from "Voice to Influence™ × Syllaby" (co-equal) to "Voice to Influence™ presents" with a "Founding Partner: Syllaby" badge, per Dave's explicit choice to fix this now rather than wait for the full build. Also corrected hero CTA copy from "one day" to the Saturday/Sunday two-day format. Not yet pushed — see WHAT'S BEEN BUILT.
 - Subfolders skill referenced in root CLAUDE.md does not exist in `Skills/` — folder set up manually. Dave chose not to build the skill first (2026-09-11).
+- 2026-09-13: **Pricing correction** — the first-100-tickets-free coupon mechanic from the
+  session 3 build brief is retracted. Dave: "there are no free seats." Removed from the
+  register panel copy; original brief text struck through (not deleted) in CLAUDE.md for the
+  record.
 
 ---
 
