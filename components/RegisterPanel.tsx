@@ -9,15 +9,14 @@ export default function RegisterPanel() {
           <h2 className="text-[clamp(28px,4vw,40px)] mb-5">Gold Coast &middot; June 2027</h2>
           <p className="text-[15.5px] text-brand-mist leading-relaxed max-w-[540px] mx-auto mb-8">
             General admission from ~$497, early-bird pricing available now — price rises as the
-            event nears. The first 100 seats are free for early supporters via coupon code.
+            event nears.
           </p>
 
           {/*
             GHL REGISTRATION FORM — NOT YET SUPPLIED.
             Replace this placeholder block with the embedded native GHL form
-            (see CLAUDE.md STILL OPEN section: form ID / embed code / coupon
-            mechanism for the free-100 launch phase). Until then this button
-            has no live destination.
+            (see CLAUDE.md STILL OPEN section: form ID / embed code). Until
+            then this button has no live destination.
           */}
           <div className="border border-dashed border-brand-gold/40 rounded-[2px] p-6 sm:p-8 bg-brand-ink/60 mb-6">
             <p className="text-[13px] text-brand-mist/80 mb-5">

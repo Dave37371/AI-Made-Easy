@@ -100,10 +100,12 @@ speaker profile pages follow the `vti-site/faculty/jeff-ross.html` structure (he
 + facts sidebar, topics, closing CTA).
 
 **Registration mechanic — honestly incomplete, not faked:** the register panel shows real
-pricing framing (~$497 general, early-bird, first-100-free coupon mechanic as copy) but the
-actual GHL form isn't embedded — Dave hasn't supplied the form ID/embed code yet (see STILL
-OPEN section). The "Save My Seat" button in that panel is visibly disabled with "Coming Soon"
-rather than linking anywhere fake. Marked clearly in the source for whoever swaps it in.
+pricing framing (~$497 general, early-bird) but the actual GHL form isn't embedded — Dave
+hasn't supplied the form ID/embed code yet (see STILL OPEN section). The "Save My Seat" button
+in that panel is visibly disabled with "Coming Soon" rather than linking anywhere fake. Marked
+clearly in the source for whoever swaps it in. (Original copy also carried the first-100-free
+coupon mechanic from the build brief — Dave retracted that 13 Sep 2026, see BUILD BRIEF section;
+pulled from the page.)
 
 **Watch page:** not built. Speaker pages currently note "the watch page will be linked here
 once the event goes live" rather than linking to a page that doesn't exist. Building the
@@ -152,11 +154,19 @@ Full VTI brand truth (offer stack, ecosystem, voice, team, routing rules) lives 
 **Pricing:**
 - General admission: **~$497/ticket minimum**.
 - Early-bird tiers, price rises as the event nears.
-- Needs a **coupon code system** (ties into the launch mechanic below).
+- ~~Needs a coupon code system (ties into the launch mechanic below)~~ — no longer applies,
+  see launch mechanic retraction below.
 
-**Launch mechanic:**
-- First **100 tickets free** via coupon code, distributed at **Austin's AI Marketing World event** (recipients still cover their own travel/event costs — the ticket itself is free, nothing else is comped).
-- This is used as **social proof** ("100 people already committed") to then sell the remaining tickets at ~$500 each. Sequencing matters: the free-100 push comes first, general sale copy should be able to lean on "already X people confirmed" once that phase completes.
+**Launch mechanic — RETRACTED (13 Sep 2026):** the free-100-tickets-via-coupon mechanic below
+was in the original build brief and had made it onto the live registration page copy. Dave
+corrected it 13 Sep 2026: **there are no free seats** — pulled from the page. Leaving the
+original text struck through rather than deleted, so it's clear this was said once and then
+retracted, not silently invented:
+
+~~First 100 tickets free via coupon code, distributed at Austin's AI Marketing World event
+(recipients still cover their own travel/event costs — the ticket itself is free, nothing else
+is comped). Used as social proof ("100 people already committed") to then sell the remaining
+tickets at ~$500 each.~~
 
 **Budget:**
 - Production cost: **~$100,000**.
@@ -179,7 +189,7 @@ No bios/roles beyond names confirmed yet for Kanji Lowe, Melissa Mitchell, or Br
 - Exact summit day(s)/dates within June 2027 (which Saturday/Sunday), and venue within Gold Coast
 - Bruno & Stacie: flying in or virtual — not yet settled
 - Speaker bios/roles for Kanji Lowe, Melissa Mitchell, Bruno & Stacie
-- The actual GHL form (embed code / form ID) for registration, including the coupon-code mechanism for the free-100 launch phase — not yet supplied, needed before the landing page can go live
+- The actual GHL form (embed code / form ID) for registration — not yet supplied, needed before the landing page can go live
 - Exact early-bird pricing tiers and price-rise schedule
 - Sponsor prospects/deals against the $20K–$50K target
 - Custom domain (Dave connecting via Netlify — get the final domain once live)
