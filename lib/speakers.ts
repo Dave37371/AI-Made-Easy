@@ -28,11 +28,11 @@ export const speakers: Speaker[] = [
     photo:
       "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6a87f3dde6501a9518307d6d.png",
     cardBio:
-      "Author of VIRALITY!, two-time seven-figure entrepreneur, and Managing Partner at Bullhouse Ventures. Hosts Sunday's VIP mastermind.",
+      "Author of VIRALITY!, two-time seven-figure entrepreneur, and Managing Partner at Bullhouse Ventures. Hosts the separate VIP mastermind.",
     bio: [
       "Austin is the author of VIRALITY!, a keynote speaker and a two-time seven-figure entrepreneur. He has created and published over 12,000 videos across social media, earning billions of views and millions of followers on every platform.",
       "He is CEO of Syllaby, an AI startup that helps content creators create, schedule and publish videos in minutes, Managing Partner at Bullhouse Ventures, and co-founder of AI Marketing World. He has also taught AI entrepreneurship at Duke University.",
-      "At AI Made Easy Summit, Austin hosts Sunday's VIP mastermind — capped at 50 people — bringing the same playbook that's generated billions of views to marketers and business owners ready to put AI to work.",
+      "At AI Made Easy Summit, Austin hosts the separate VIP mastermind, bringing the same playbook that's generated billions of views to marketers and business owners ready to put AI to work.",
     ],
     facts: [
       { label: "12,000+ Videos", detail: "Billions of views, millions of followers" },
@@ -56,7 +56,7 @@ export const speakers: Speaker[] = [
     tier: "vip",
     confirmed: true,
     photo:
-      "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6a6bb788497cd89d24e5c9b8.png",
+      "https://assets.cdn.filesafe.space/bLj1eU2J7syW8tAl2WB0/media/6a4b33b41bf938e547aa49a2.png",
     cardBio:
       "Co-Founder of Voice to Influence. Seventeen years in online business, customer value journeys and leadership development.",
     bio: [
@@ -85,7 +85,7 @@ export const speakers: Speaker[] = [
     role: "TEDx Speaker & Founder, Synapze AI",
     tier: "speaker",
     confirmed: true,
-    photo: null,
+    photo: "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab324c3d356b1331a20d77b.png",
     cardBio:
       "Helps leaders and service businesses turn AI from buzzword into revenue through keynote speaking and done-for-you implementation.",
     bio: [
@@ -107,16 +107,12 @@ export const speakers: Speaker[] = [
     ],
   },
   {
-    slug: "melissa-mitchell",
-    name: "Melissa Mitchell",
-    role: "To be confirmed",
-    tier: "speaker",
-    confirmed: false,
-    photo: null,
-    cardBio: "Speaker details coming soon.",
-    bio: ["Bio to be confirmed — check back as we lock in the full lineup."],
-    facts: [],
-    topics: [],
+    slug: "melissa-mitchell", name: "Melissa Mitchell", role: "Agency owner, Lolly Said Yes", tier: "speaker", confirmed: true,
+    photo: "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab324c87c231bdb64f76a2e.png",
+    cardBio: "Helps businesses and creators use AI to produce content in-house and reduce the work behind their marketing.",
+    bio: ["Melissa Mitchell runs Lolly Said Yes in Shepparton, Victoria.", "Her work helps businesses remove bottlenecks and reduce labour load through AI automation.", "She helps businesses and creators produce content and marketing faster, in-house, without outsourcing."],
+    facts: [{label: "Agency owner", detail: "Lolly Said Yes"}, {label: "Based in", detail: "Shepparton, Victoria"}],
+    topics: ["AI marketing", "In-house content", "Business automation"]
   },
   {
     slug: "bruno-marcinkowski",
@@ -126,7 +122,7 @@ export const speakers: Speaker[] = [
     tier: "speaker",
     confirmed: true,
     photo:
-      "https://statics.myclickfunnels.com/workspace/eorZDl/image/22286379/file/small-fcfab806ba6c69dc2a9a991333e9ffe3.png",
+      "https://assets.cdn.filesafe.space/bLj1eU2J7syW8tAl2WB0/media/6a4b33b46f5641e105c92498.png",
     cardBio:
       "Real estate and AI investor. Co-founded AI Unlocked Interactive Workshops with wife Stacie, helping Realtors turn AI curiosity into AI confidence.",
     bio: [
@@ -135,7 +131,7 @@ export const speakers: Speaker[] = [
       "Together with his wife Stacie, Bruno co-founded AI Unlocked Interactive Workshops — helping Realtors nationwide turn likes into leads and AI curiosity into AI confidence, with hands-on implementation rather than theory.",
     ],
     facts: [
-      { label: "Co-Founder", detail: "The Dream Team 1 (PA · NJ · FL)" },
+      { label: "Co-Founder", detail: "The Dream Team 1" },
       { label: "Co-Founder", detail: "AI Unlocked Interactive Workshops" },
       { label: "Penn State", detail: "Computer Science" },
       { label: "Certified", detail: "Mathematics, coding & computer security" },
@@ -156,19 +152,19 @@ export const speakers: Speaker[] = [
     tier: "speaker",
     confirmed: true,
     photo:
-      "https://statics.myclickfunnels.com/workspace/eorZDl/image/22286382/file/small-c5f1d2a5e9bc94e9a1f3d2b0fa74ef2e.png",
+      "https://assets.cdn.filesafe.space/bLj1eU2J7syW8tAl2WB0/media/6a4b33b46f5641e105c924a7.png",
     cardBio:
       "20+ years in operational leadership. Co-founded AI Unlocked Interactive Workshops with husband Bruno, bringing hands-on AI implementation to Realtors and beyond.",
     bio: [
       "Stacie Marcinkowski began her real estate business after over 20 years as a Director of Operations at one of Philadelphia's top legal offices. She holds a Bachelor of Arts in Psychology and has completed a Master of Science program in Human Resources.",
-      "As Team Leader of The Dream Team 1, Stacie teaches her team compassion, integrity, and — most of all — to have fun. The Dream Team specialises in PA, NJ, and Florida, with experienced partners across the country.",
+      "As Team Leader of The Dream Team 1, Stacie teaches her team compassion, integrity, and — most of all — to have fun. The Dream Team specialises in PA and NJ, with experienced partners across the country.",
       "Together with her husband Bruno, Stacie co-founded AI Unlocked Interactive Workshops — bringing decades of operational leadership to bear on helping Realtors, law firms, medical billing teams, banking professionals and more implement modern AI tools with hands-on care.",
     ],
     facts: [
       { label: "20+ Years", detail: "Director of Operations, legal offices" },
       { label: "Co-Founder", detail: "AI Unlocked Interactive Workshops" },
       { label: "BA Psychology", detail: "MS program, Human Resources" },
-      { label: "PA · NJ · FL", detail: "Tri-state real estate specialist" },
+      { label: "PA · NJ", detail: "Real estate team" },
     ],
     topics: [
       "AI for Realtors",
@@ -179,16 +175,20 @@ export const speakers: Speaker[] = [
     ],
   },
   {
-    slug: "louise-dutka",
-    name: "Louise Dutka",
-    role: "To be confirmed",
-    tier: "speaker",
-    confirmed: false,
-    photo: null,
-    cardBio: "Speaker details coming soon.",
-    bio: ["Bio to be confirmed — check back as we lock in the full lineup."],
-    facts: [],
-    topics: [],
+    slug: "louise-dutka", name: "Louise Dutka", role: "Founder, The Disruptive Suite", tier: "speaker", confirmed: true,
+    photo: "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab324c630b0f957ccf150c6.png",
+    cardBio: "Brings art, strategy and automation together through AI branding, avatars, video and practical workflows.",
+    bio: ["Louise Dutka is the founder of The Disruptive Suite, working at the intersection of art, strategy and automation.", "She helps founders, brands and teams create AI-powered branding, video, product concepts and intelligent workflows.", "Her work includes digital avatars, virtual photoshoots, podcast production and content systems designed to make AI visual and accessible."],
+    facts: [{label: "Founder", detail: "The Disruptive Suite"}, {label: "Speciality", detail: "AI branding and creative production"}],
+    topics: ["AI branding", "Avatars", "Video creation", "Creative workflows"]
+  },
+  {
+    slug: "joy-nicholson", name: "Joy Nicholson", role: "AI systems & marketing educator", tier: "speaker", confirmed: true,
+    photo: "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab324c5f07a3cb6d47d3a1d.png",
+    cardBio: "Helps small business owners save time with simple AI support systems, clearer communication and a voice that stays their own.",
+    bio: ["Joy Nicholson helps small business owners reduce overwhelm through clearer communication, smarter marketing and simple AI systems.", "Her background includes five years running a marketing agency and over 3,800 hours of AI education.", "She also runs Curious Kea Publishing, creating books and workbooks that help families raise independent thinkers."],
+    facts: [{label: "5 years", detail: "Running a marketing agency"}, {label: "3,800+ hours", detail: "AI education"}, {label: "Publisher", detail: "Curious Kea Publishing"}],
+    topics: ["Small business AI", "Client communication", "Marketing", "Keeping your voice"]
   },
 ];
 

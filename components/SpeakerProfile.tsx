@@ -22,7 +22,7 @@ export default function SpeakerProfile({ speaker }: { speaker: Speaker }) {
         <div className="relative z-10 max-w-[960px] mx-auto px-6 grid md:grid-cols-[1fr_320px] gap-8 md:gap-14 items-center">
           <div>
             <span className="inline-flex items-center gap-3.5 text-[11px] font-semibold tracking-[0.24em] uppercase text-brand-gold mb-5 before:content-[''] before:w-[30px] before:h-px before:bg-brand-gold/55">
-              {speaker.tier === "vip" ? "VIP speaker" : "Speaker"}
+              {speaker.tier === "vip" ? "Featured speaker" : "Speaker"}
             </span>
             <h1 className="text-[clamp(36px,5.4vw,66px)] mb-3.5">{speaker.name}</h1>
             <p className="text-[13px] font-semibold tracking-[0.1em] uppercase text-brand-gold mb-5 leading-relaxed">
@@ -126,18 +126,17 @@ export default function SpeakerProfile({ speaker }: { speaker: Speaker }) {
             AI Made Easy Summit
           </span>
           <h2 className="text-[clamp(28px,4vw,38px)] mb-4">
-            Reserve your seat at the Gold Coast.
+            Join us on the Gold Coast.
           </h2>
           <p className="text-[15px] text-brand-mist max-w-[500px] mx-auto mb-7">
-            Live and virtual, June 2027. Full watch page and streaming details will be linked
-            here once the event goes live.
+            Surfers Paradise, Gold Coast. Friday 18 June 2027.
           </p>
-          <a
+          <Link
             href="/#register"
             className="inline-block text-[13px] font-semibold tracking-[0.14em] uppercase px-11 py-[19px] rounded-[2px] bg-brand-gold text-brand-ink transition-all hover:bg-brand-gold-lite hover:-translate-y-0.5"
           >
             Save My Seat
-          </a>
+          </Link>
         </div>
       </section>
     </>

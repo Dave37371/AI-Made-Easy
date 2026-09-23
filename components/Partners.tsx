@@ -1,0 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
+export default function Partners() {
+return <section className="partners"><div className="summit-wrap"><p className="eyebrow">The partners behind the room</p><div className="partner-grid"><div><span>Presented by</span><img src="/assets/vti-logo-header.png" alt="Voice to Influence" /></div><div><span>Founding partner</span><div className="syllaby-lockup"><img src="/assets/syllaby-logo.png" alt="" /><b>Syllaby</b></div></div><div><span>Sponsor</span><img src="https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6aa777019f8b31b6abf7070c.png" alt="PodGo" loading="lazy" /></div><div><span>Sponsor</span><img src="https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6aa7770449f830e49b0f586b.png" alt="Contatta" loading="lazy" /></div></div></div></section>;
+}

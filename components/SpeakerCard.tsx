@@ -7,12 +7,12 @@ export default function SpeakerCard({ speaker }: { speaker: Speaker }) {
   return (
     <Link
       href={`/speakers/${speaker.slug}`}
-      className={`group block border rounded-[2px] bg-brand-ink overflow-hidden transition-all hover:-translate-y-1 ${
+      className={`speaker-card group border rounded-[2px] bg-brand-ink overflow-hidden transition-all hover:-translate-y-1 ${
         isVip ? "border-brand-gold/30" : "border-white/10 hover:border-brand-gold/35"
       }`}
     >
       <div
-        className={`w-full aspect-[4/5] bg-brand-ink-lite border-b flex items-center justify-center overflow-hidden ${
+        className={`speaker-photo w-full aspect-[4/5] bg-brand-ink-lite border-b flex items-center justify-center overflow-hidden ${
           isVip ? "border-brand-gold/25" : "border-brand-gold/10"
         }`}
       >
@@ -21,6 +21,7 @@ export default function SpeakerCard({ speaker }: { speaker: Speaker }) {
           <img
             src={speaker.photo}
             alt={speaker.name}
+            loading="lazy"
             className="w-full h-full object-cover object-top"
             style={speaker.photoPosition ? { objectPosition: speaker.photoPosition } : undefined}
           />
@@ -37,10 +38,10 @@ export default function SpeakerCard({ speaker }: { speaker: Speaker }) {
           </span>
         )}
       </div>
-      <div className={isVip ? "p-6 sm:p-7" : "p-5"}>
+      <div className={isVip ? "speaker-card-content p-6 sm:p-7" : "speaker-card-content p-5"}>
         {isVip && (
           <span className="inline-block text-[10px] font-semibold tracking-[0.2em] uppercase text-brand-ink bg-brand-gold px-2.5 py-1 rounded-[2px] mb-3">
-            VIP speaker
+            Featured speaker
           </span>
         )}
         <h3

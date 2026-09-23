@@ -35,7 +35,7 @@ export default async function SpeakerPage({
   return (
     <>
       <Header />
-      <SpeakerProfile speaker={speaker} />
+      <main id="main"><SpeakerProfile speaker={speaker} /></main>
       <Footer />
     </>
   );
