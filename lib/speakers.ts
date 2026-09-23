@@ -3,7 +3,7 @@ export type Speaker = {
   name: string;
   role: string;
   company?: string;
-  tier: "vip" | "speaker";
+  tier: "vip" | "speaker" | "host";
   confirmed: boolean;
   photo: string | null;
   /** Manual object-position override — only set this if a specific photo still
@@ -51,14 +51,14 @@ export const speakers: Speaker[] = [
   {
     slug: "jeff-ross",
     name: "Jeff Ross",
-    role: "Co-Founder, Voice to Influence",
-    company: "Main Speaker",
-    tier: "vip",
+    role: "MC & Executive Producer",
+    company: "Co-Founder, Voice to Influence",
+    tier: "host",
     confirmed: true,
     photo:
       "https://assets.cdn.filesafe.space/bLj1eU2J7syW8tAl2WB0/media/6a4b33b41bf938e547aa49a2.png",
     cardBio:
-      "Co-Founder of Voice to Influence. Seventeen years in online business, customer value journeys and leadership development.",
+      "Your MC and executive producer, and Co-Founder of Voice to Influence. Jeff brings seventeen years in online business, marketing and leadership to the stage.",
     bio: [
       "Jeff is an international speaker, customer value journey strategist, mentor and digital marketing leader with over seventeen years of experience in online business, social selling and influence-based marketing. Known for his ability to clarify chaos, he helps leaders and brands design simple, scalable customer journeys that turn strangers into advocates.",
       "A specialist in voice positioning and message clarity, Jeff helps thought leaders find, refine and monetise their voice through ethical copywriting, storytelling and attraction marketing.",
@@ -83,7 +83,7 @@ export const speakers: Speaker[] = [
     slug: "kanji-low",
     name: "Kanji Low",
     role: "TEDx Speaker & Founder, Synapze AI",
-    tier: "speaker",
+    tier: "vip",
     confirmed: true,
     photo: "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab324c3d356b1331a20d77b.png",
     cardBio:
@@ -107,7 +107,7 @@ export const speakers: Speaker[] = [
     ],
   },
   {
-    slug: "melissa-mitchell", name: "Melissa Mitchell", role: "Agency owner, Lolly Said Yes", tier: "speaker", confirmed: true,
+    slug: "melissa-mitchell", name: "Melissa Mitchell", role: "Agency owner, Lolly Said Yes", tier: "vip", confirmed: true,
     photo: "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab324c87c231bdb64f76a2e.png",
     cardBio: "Helps businesses and creators use AI to produce content in-house and reduce the work behind their marketing.",
     bio: ["Melissa Mitchell runs Lolly Said Yes in Shepparton, Victoria.", "Her work helps businesses remove bottlenecks and reduce labour load through AI automation.", "She helps businesses and creators produce content and marketing faster, in-house, without outsourcing."],

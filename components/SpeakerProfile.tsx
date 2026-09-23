@@ -22,7 +22,7 @@ export default function SpeakerProfile({ speaker }: { speaker: Speaker }) {
         <div className="relative z-10 max-w-[960px] mx-auto px-6 grid md:grid-cols-[1fr_320px] gap-8 md:gap-14 items-center">
           <div>
             <span className="inline-flex items-center gap-3.5 text-[11px] font-semibold tracking-[0.24em] uppercase text-brand-gold mb-5 before:content-[''] before:w-[30px] before:h-px before:bg-brand-gold/55">
-              {speaker.tier === "vip" ? "Featured speaker" : "Speaker"}
+              {speaker.tier === "host" ? "MC & Executive Producer" : speaker.tier === "vip" ? "Featured speaker" : "Speaker"}
             </span>
             <h1 className="text-[clamp(36px,5.4vw,66px)] mb-3.5">{speaker.name}</h1>
             <p className="text-[13px] font-semibold tracking-[0.1em] uppercase text-brand-gold mb-5 leading-relaxed">

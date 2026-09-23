@@ -1,13 +1,13 @@
 import Link from "next/link";
 import type { Speaker } from "@/lib/speakers";
 
-export default function SpeakerCard({ speaker }: { speaker: Speaker }) {
+export default function SpeakerCard({ speaker, landscape = false }: { speaker: Speaker; landscape?: boolean }) {
   const isVip = speaker.tier === "vip";
 
   return (
     <Link
       href={`/speakers/${speaker.slug}`}
-      className={`speaker-card group border rounded-[2px] bg-brand-ink overflow-hidden transition-all hover:-translate-y-1 ${
+      className={`speaker-card ${landscape ? "speaker-landscape" : ""} group border rounded-[2px] bg-brand-ink overflow-hidden transition-all hover:-translate-y-1 ${
         isVip ? "border-brand-gold/30" : "border-white/10 hover:border-brand-gold/35"
       }`}
     >
