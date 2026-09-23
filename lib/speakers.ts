@@ -182,14 +182,7 @@ export const speakers: Speaker[] = [
     facts: [{label: "Founder", detail: "The Disruptive Suite"}, {label: "Speciality", detail: "AI branding and creative production"}],
     topics: ["AI branding", "Avatars", "Video creation", "Creative workflows"]
   },
-  {
-    slug: "joy-nicholson", name: "Joy Nicholson", role: "AI systems & marketing educator", tier: "speaker", confirmed: true,
-    photo: "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab324c5f07a3cb6d47d3a1d.png",
-    cardBio: "Helps small business owners save time with simple AI support systems, clearer communication and a voice that stays their own.",
-    bio: ["Joy Nicholson helps small business owners reduce overwhelm through clearer communication, smarter marketing and simple AI systems.", "Her background includes five years running a marketing agency and over 3,800 hours of AI education.", "She also runs Curious Kea Publishing, creating books and workbooks that help families raise independent thinkers."],
-    facts: [{label: "5 years", detail: "Running a marketing agency"}, {label: "3,800+ hours", detail: "AI education"}, {label: "Publisher", detail: "Curious Kea Publishing"}],
-    topics: ["Small business AI", "Client communication", "Marketing", "Keeping your voice"]
-  },
+
 ];
 
 export function getSpeaker(slug: string) {

@@ -148,3 +148,17 @@ html{scroll-padding-top:100px}body{line-height:1.65}a,button,summary{-webkit-tap
 .payment-section{background:#141720;border-top:1px solid #c9a84c30;overflow-x:clip}
 .payment-fallback{margin:0;padding:18px 24px 28px;text-align:center;font-size:12px;color:#C2BAA8}
 .payment-fallback a{color:#E8C96A;text-decoration:underline;text-underline-offset:3px}
+
+/* Keep the supplied speaker poster complete at every screen size. */
+.speaker-led-hero{background:var(--ink)}
+.hero-presenters{text-align:center;padding:24px 0;border-bottom:1px solid #c9a84c30;color:var(--mist);font-size:13px}
+.hero-presenters strong{display:block;font-family:var(--font-display);font-size:25px;color:var(--cream);margin-top:4px}
+.speaker-hero-grid{display:grid;grid-template-columns: .85fr 1.25fr;gap:36px;align-items:center;padding:48px 0}
+.speaker-hero-copy h1{font-size:clamp(32px,3.2vw,48px);line-height:1.12;margin-bottom:24px}
+.speaker-hero-copy h1 em{color:var(--gold-lite);font-style:normal}
+.speaker-hero-art{width:100%;height:auto;display:block;border:1px solid #c9a84c40}
+.speaker-hero-copy .eyebrow{font-size:9px;line-height:1.7;margin-bottom:18px}
+.speaker-hero-copy .hero-lede{font-size:19px}
+.speaker-hero-copy .hero-support{font-size:15px}
+@media(min-width:1200px){.speaker-led-hero>.summit-wrap{max-width:1600px}}
+@media(max-width:900px){.speaker-hero-grid{grid-template-columns:1fr;padding:28px 0;gap:28px}.speaker-hero-art{grid-row:1}.speaker-hero-copy h1{font-size:36px}.hero-presenters{padding:18px 0}.hero-presenters strong{font-size:22px}}

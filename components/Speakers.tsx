@@ -13,10 +13,10 @@ export default function Speakers() {
             Speakers
           </span>
           <h2 className="metal text-[clamp(30px,4.4vw,46px)] mb-4">
-            The people in the <em className="text-brand-gold">room.</em>
+            Meet your <em className="text-brand-gold">speakers.</em>
           </h2>
           <p className="text-[clamp(17px,1.35vw,19px)] text-brand-mist leading-relaxed">
-            Meet the people bringing AI, content, marketing and business experience to the summit.
+            From AI video and content creation to marketing and business automation, meet the people sharing their experience.
           </p>
         </div>
 

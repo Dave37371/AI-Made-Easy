@@ -4,15 +4,21 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "AI Made Easy Summit — Presented by Voice to Influence™",
   description:
-    "Practical AI. Better Marketing. Smarter Business. Surfers Paradise, Gold Coast, 18 June 2027. Presented by Voice to Influence™, founding partner Syllaby.",
+    "Learn AI for content, marketing and business with Austin Armstrong, Melissa Mitchell, Kanji Low and more. Gold Coast, 18 June 2027. Tickets US$497.",
   openGraph: {
     title: "AI Made Easy Summit",
     description:
-      "Practical AI. Better Marketing. Smarter Business. Surfers Paradise, Gold Coast, 18 June 2027.",
+      "Austin Armstrong, Melissa Mitchell, Kanji Low and more. Practical AI for your business. Gold Coast, 18 June 2027. Tickets US$497.",
     type: "website",
     images: [
-      "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6aa1dbb581f0105816d33cb6.png",
+      "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab37d6fd0a4fa87bb834540.jpeg",
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Made Easy Summit | Gold Coast, 18 June 2027",
+    description: "Learn AI with Austin Armstrong, Melissa Mitchell, Kanji Low and more. Tickets US$497.",
+    images: ["https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab37d6fd0a4fa87bb834540.jpeg"],
   },
   icons: {
     icon: "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6aa1dc7d8d82674005011470.png",

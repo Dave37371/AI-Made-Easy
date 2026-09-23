@@ -8,5 +8,5 @@ import Footer from "@/components/Footer";
 import Partners from "@/components/Partners";
 import Faq from "@/components/Faq";
 export default function Home() {
-return <><Header /><main id="main"><Hero /><Body /><Speakers /><Schedule /><RegisterPanel /><Faq /><Partners /></main><Footer /></>;
+return <><Header /><main id="main"><Hero /><Speakers /><Body /><Schedule /><RegisterPanel /><Faq /><Partners /></main><Footer /></>;
 }
