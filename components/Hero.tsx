@@ -3,11 +3,18 @@ import { event } from "@/lib/event";
 export default function Hero() {
   return <section className="speaker-led-hero">
     <div className="summit-wrap">
-      <p className="hero-presenters">Voice to Influence &amp; Syllaby present <strong>AI Made Easy Summit</strong></p>
+      <div className="hero-presenters">
+        <div className="hero-presenter-logos">
+          <img className="hero-vti-logo" src="/assets/vti-logo-header.png" alt="Voice to Influence" />
+          <div className="hero-syllaby-logo"><img src="/assets/syllaby-logo.png" alt="" /><span>Syllaby</span></div>
+        </div>
+        <p className="hero-presents">Presents</p>
+        <h1 className="hero-event-title">AI Made Easy Summit</h1>
+      </div>
       <div className="speaker-hero-grid">
         <div className="speaker-hero-copy">
           <p className="eyebrow">AI for marketing &amp; business · Live on the Gold Coast</p>
-          <h1>Learn AI with <em>Austin Armstrong, Melissa Mitchell &amp; Kanji Low.</em></h1>
+          <h2>Learn AI with <em>Austin Armstrong, Melissa Mitchell &amp; Kanji Low.</em></h2>
           <p className="hero-lede">Stop guessing which AI tools will help your business.</p>
           <p className="hero-support">Join them and Jeff Ross, Bruno and Stacie Marcinkowski, and Louise Dutka for a workshop-style event on creating content, improving your marketing and cutting repetitive work.</p>
           <div className="hero-facts"><span>Friday · {event.date}</span><span>{event.location}</span></div>

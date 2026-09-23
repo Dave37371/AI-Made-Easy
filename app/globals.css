@@ -154,11 +154,20 @@ html{scroll-padding-top:100px}body{line-height:1.65}a,button,summary{-webkit-tap
 .hero-presenters{text-align:center;padding:24px 0;border-bottom:1px solid #c9a84c30;color:var(--mist);font-size:13px}
 .hero-presenters strong{display:block;font-family:var(--font-display);font-size:25px;color:var(--cream);margin-top:4px}
 .speaker-hero-grid{display:grid;grid-template-columns: .85fr 1.25fr;gap:36px;align-items:center;padding:48px 0}
-.speaker-hero-copy h1{font-size:clamp(32px,3.2vw,48px);line-height:1.12;margin-bottom:24px}
-.speaker-hero-copy h1 em{color:var(--gold-lite);font-style:normal}
+.speaker-hero-copy h2{font-size:clamp(32px,3.2vw,48px);line-height:1.12;margin-bottom:24px}
+.speaker-hero-copy h2 em{color:var(--gold-lite);font-style:normal}
 .speaker-hero-art{width:100%;height:auto;display:block;border:1px solid #c9a84c40}
 .speaker-hero-copy .eyebrow{font-size:9px;line-height:1.7;margin-bottom:18px}
 .speaker-hero-copy .hero-lede{font-size:19px}
 .speaker-hero-copy .hero-support{font-size:15px}
 @media(min-width:1200px){.speaker-led-hero>.summit-wrap{max-width:1600px}}
-@media(max-width:900px){.speaker-hero-grid{grid-template-columns:1fr;padding:28px 0;gap:28px}.speaker-hero-art{grid-row:1}.speaker-hero-copy h1{font-size:36px}.hero-presenters{padding:18px 0}.hero-presenters strong{font-size:22px}}
+@media(max-width:900px){.speaker-hero-grid{grid-template-columns:1fr;padding:28px 0;gap:28px}.speaker-hero-art{grid-row:1}.speaker-hero-copy h2{font-size:36px}.hero-presenters{padding:18px 0}.hero-presenters strong{font-size:22px}}
+
+.hero-presenters{padding:40px 0 36px}
+.hero-presenter-logos{display:flex;align-items:center;justify-content:center;gap:36px}
+.hero-vti-logo{width:300px;height:auto}
+.hero-syllaby-logo{display:flex;align-items:center;gap:12px;padding-left:36px;border-left:1px solid #c9a84c55;color:var(--cream);font-size:38px;font-weight:700;line-height:1}
+.hero-syllaby-logo img{width:64px;height:64px;object-fit:contain}
+.hero-presents{text-transform:uppercase;letter-spacing:.35em;font-size:14px;color:var(--gold-lite);margin:24px 0 16px;font-weight:600}
+.hero-event-title{font-size:clamp(44px,6.5vw,92px);line-height:1.08;color:var(--cream);letter-spacing:-.025em}
+@media(max-width:640px){.hero-presenters{padding:28px 0}.hero-presenter-logos{gap:16px}.hero-vti-logo{width:46%;max-width:200px}.hero-syllaby-logo{padding-left:16px;gap:8px;font-size:25px}.hero-syllaby-logo img{width:36px;height:36px}.hero-presents{font-size:11px;margin:20px 0 14px}.hero-event-title{font-size:clamp(40px,10vw,62px)}}
