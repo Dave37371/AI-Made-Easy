@@ -1,4 +1,30 @@
-import { checkoutUrl, event } from "@/lib/event";
+import Script from "next/script";
+
 export default function RegisterPanel() {
-return <section className="summit-section" id="register"><div className="summit-wrap ticket-grid"><div><p className="eyebrow">Your next move</p><h2 className="metal">Get out of the tabs.<br /><em>Get into the room.</em></h2><p className="ticket-intro">One event focused on making AI useful in your marketing and your business.</p><p className="small-note">Presented by Voice to Influence™.<br />Founding partner: Syllaby.</p></div><div className="ticket-card"><span className="eyebrow">AI Made Easy Summit</span><h3>General admission</h3><div className="ticket-price"><span>US$</span>497</div><p className="ticket-currency">Ticket price in US dollars</p><div className="ticket-rule" /><p>{event.location}</p><p>Friday · {event.date}</p><ul><li>Admission to the main event</li><li>Workshop-style AI learning</li><li>Marketing and business focus</li></ul>{checkoutUrl ? <a className="summit-btn" href={checkoutUrl}>Get my ticket · {event.price} ↗</a> : <><button className="summit-btn" disabled>Ticket sales opening soon</button><p className="small-note">Online booking will be available here shortly.</p></>}<p className="small-note">Travel, accommodation and the VIP mastermind are separate.</p></div></div></section>;
+  return (
+    <section id="register" className="payment-section" aria-label="Book your AI Made Easy Summit ticket">
+      <iframe
+        src="https://api.productivityhub.tech/widget/form/DMvBBSYveEm0rcGmZ6XL"
+        style={{ width: "100%", height: "1753px", minHeight: "520px", border: "none", borderRadius: "8px", display: "block", background: "#141720" }}
+        id="inline-DMvBBSYveEm0rcGmZ6XL"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="ai MADE EASY SUMMIT"
+        data-height="1753"
+        data-layout-iframe-id="inline-DMvBBSYveEm0rcGmZ6XL"
+        data-form-id="DMvBBSYveEm0rcGmZ6XL"
+        data-cookie-consent="true"
+        data-cookie-consent-provider="auto"
+        title="AI Made Easy Summit ticket checkout"
+        allow="payment"
+      />
+      <Script src="https://api.productivityhub.tech/js/form_embed.js" strategy="afterInteractive" />
+      <p className="payment-fallback">Having trouble loading the checkout? <a href="https://api.productivityhub.tech/widget/form/DMvBBSYveEm0rcGmZ6XL" target="_blank" rel="noopener noreferrer">Open the booking form in a new tab</a>.</p>
+    </section>
+  );
 }
