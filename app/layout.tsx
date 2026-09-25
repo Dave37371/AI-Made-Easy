@@ -4,11 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "AI Made Easy Summit — Presented by Voice to Influence™",
   description:
-    "Learn AI for content, marketing and business with Austin Armstrong, Melissa Mitchell, Kanji Low and more. Gold Coast, 18 June 2027. Tickets US$497.",
+    "Learn AI for content, marketing and business with Austin Armstrong, Scott Simson, Melissa Mitchell, Kanji Low and more. Gold Coast, 18 June 2027. Tickets US$497.",
   openGraph: {
     title: "AI Made Easy Summit",
     description:
-      "Austin Armstrong, Melissa Mitchell, Kanji Low and more. Practical AI for your business. Gold Coast, 18 June 2027. Tickets US$497.",
+      "Austin Armstrong, Scott Simson, Melissa Mitchell, Kanji Low and more. Practical AI for your business. Gold Coast, 18 June 2027. Tickets US$497.",
     type: "website",
     images: [
       "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab5de1c974a9da6eeaf739c.jpeg",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AI Made Easy Summit | Gold Coast, 18 June 2027",
-    description: "Learn AI with Austin Armstrong, Melissa Mitchell, Kanji Low and more. Tickets US$497.",
+    description: "Learn AI with Austin Armstrong, Scott Simson, Melissa Mitchell, Kanji Low and more. Tickets US$497.",
     images: ["https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab5de1c974a9da6eeaf739c.jpeg"],
   },
   icons: {

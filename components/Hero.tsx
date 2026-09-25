@@ -14,9 +14,9 @@ export default function Hero() {
       <div className="speaker-hero-grid">
         <div className="speaker-hero-copy">
           <p className="eyebrow">AI for marketing &amp; business · Live on the Gold Coast</p>
-          <h2>Learn AI with <em>Austin Armstrong, Melissa Mitchell &amp; Kanji Low.</em></h2>
+          <h2>Learn AI with <em>Austin Armstrong, Scott Simson, Melissa Mitchell &amp; Kanji Low.</em></h2>
           <p className="hero-lede">Stop guessing which AI tools will help your business.</p>
-          <p className="hero-support">Join them, Scott Simson, Bruno and Stacie Marcinkowski, Louise Dutka and Dave Miller for a workshop-style event on creating content, improving your marketing and cutting repetitive work.</p>
+          <p className="hero-support">Join them, Bruno and Stacie Marcinkowski, Louise Dutka and Dave Miller for a workshop-style event on creating content, improving your marketing and cutting repetitive work.</p>
           <p className="hero-small">Hosted by Jeff Ross, MC &amp; Executive Producer.</p>
           <div className="hero-facts"><span>Friday · {event.date}</span><span>{event.location}</span></div>
           <a className="summit-btn" href="#register">Get my ticket · {event.price} <span aria-hidden="true">↗</span></a>
