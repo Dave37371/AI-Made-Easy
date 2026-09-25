@@ -115,6 +115,25 @@ export const speakers: Speaker[] = [
     topics: ["AI marketing", "In-house content", "Business automation"]
   },
   {
+    slug: "scott-simson",
+    name: "Scott Simson",
+    role: "YouTube Strategist & Agency Founder",
+    tier: "vip",
+    confirmed: true,
+    photo: "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab5dce26407f2cbe4c440d4.png",
+    cardBio: "Leading YouTube strategist and founder of a multi-seven-figure agency, helping business owners turn content into consistent revenue.",
+    bio: [
+      "Scott Simson is a leading YouTube strategist and entrepreneur who helps business owners turn content into consistent revenue.",
+      "As the founder of a multi-seven-figure agency, he's known for simplifying what actually works on YouTube and cutting through the noise.",
+      "At AI Made Easy Summit, Scott shares insights on building authority, scaling content with AI systems, and using video to drive real business growth.",
+    ],
+    facts: [
+      { label: "Founder", detail: "Multi-seven-figure agency" },
+      { label: "YouTube Strategist", detail: "Content into consistent revenue" },
+    ],
+    topics: ["YouTube Strategy", "Building Authority", "Scaling Content With AI", "Video for Business Growth"],
+  },
+  {
     slug: "bruno-marcinkowski",
     name: "Bruno Marcinkowski",
     role: "Co-Founder, The Dream Team 1",
@@ -183,6 +202,35 @@ export const speakers: Speaker[] = [
     topics: ["AI branding", "Avatars", "Video creation", "Creative workflows"]
   },
 
+  {
+    slug: "dave-miller",
+    name: "Dave Miller",
+    role: "Founder, LSD Marketing",
+    company: "Head of Systems & Automation, Voice to Influence",
+    tier: "speaker",
+    confirmed: true,
+    photo: "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6aa8a4029f5a41333a6463c4.png",
+    cardBio: "Runs an AI marketing agency and builds the AI workflows, funnels and automation behind Voice to Influence. Practical AI that gets used, not another tool to evaluate.",
+    bio: [
+      "Dave Miller is the founder of LSD Marketing, an AI marketing agency, and Head of Systems & Automation at Voice to Influence, where he builds the funnels, CRM workflows and AI-powered systems behind its events, content and community.",
+      "His approach to AI is practical and no-fluff. The focus isn't chasing every new tool. It's picking the right ones and building AI systems that are functional, live and in daily use, so business owners spend less time rebuilding and more time delivering.",
+      "With 15+ years of leadership experience in construction, covering safety, well-being and team development, he brings a grounded, people-first lens to AI adoption that most technical operators miss.",
+      "At AI Made Easy Summit, Dave shows business owners how to move from dabbling in AI to running it inside their business, with simple systems and automation that carry the load.",
+    ],
+    facts: [
+      { label: "Founder", detail: "LSD Marketing, AI marketing agency" },
+      { label: "Head of Systems", detail: "Voice to Influence" },
+      { label: "15+ Years", detail: "Leadership in construction" },
+      { label: "Approach", detail: "Practical, function-first AI" },
+    ],
+    topics: [
+      "Practical AI Adoption",
+      "AI Systems & Automation",
+      "AI Implementation for Business",
+      "Funnel & Marketing Infrastructure",
+      "Leadership & Team Systems",
+    ],
+  },
 ];
 
 export function getSpeaker(slug: string) {

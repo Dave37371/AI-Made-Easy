@@ -11,14 +11,14 @@ export const metadata: Metadata = {
       "Austin Armstrong, Melissa Mitchell, Kanji Low and more. Practical AI for your business. Gold Coast, 18 June 2027. Tickets US$497.",
     type: "website",
     images: [
-      "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab37d6fd0a4fa87bb834540.jpeg",
+      "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab5de1c974a9da6eeaf739c.jpeg",
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "AI Made Easy Summit | Gold Coast, 18 June 2027",
     description: "Learn AI with Austin Armstrong, Melissa Mitchell, Kanji Low and more. Tickets US$497.",
-    images: ["https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab37d6fd0a4fa87bb834540.jpeg"],
+    images: ["https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6ab5de1c974a9da6eeaf739c.jpeg"],
   },
   icons: {
     icon: "https://assets.cdn.filesafe.space/OtOPsRWlrRPyLs03ZSTG/media/6aa1dc7d8d82674005011470.png",
